@@ -3299,7 +3299,7 @@ REGISTRATION_VALIDATION_RATELIMIT = '30/7d'
 #    It's POST end-point is rate-limited up to 60 requests per IP Address in a week by default.
 #    Purpose of this setting is to restrict an attacker from registering numerous fake accounts.
 # .. setting_tickets: https://github.com/edx/edx-platform/pull/27060
-REGISTRATION_RATELIMIT = '60/7d'
+REGISTRATION_RATELIMIT = '600/1d'
 
 SWAGGER_SETTINGS = {
     'DEFAULT_INFO': 'openedx.core.apidocs.api_info',
@@ -4678,7 +4678,7 @@ COMPLETION_BY_VIEWING_DELAY_MS = 5000
 # .. toggle_use_cases: open_edx
 # .. toggle_creation_date: 2018-01-08
 # .. toggle_tickets: https://github.com/edx/edx-platform/pull/16951
-RATELIMIT_ENABLE = True
+RATELIMIT_ENABLE = False
 
 # .. setting_name: RATELIMIT_RATE
 # .. setting_default: 120/m
